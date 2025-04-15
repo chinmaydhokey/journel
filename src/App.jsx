@@ -34,7 +34,6 @@ function App() {
   return (
     <div className="app">
       <h1>Personal Journal 📔</h1>
-
     
       <div className="form">
         <input
@@ -59,7 +58,6 @@ function App() {
         <button onClick={addEntry}>Add Entry</button>
       </div>
 
-      {/* Display Journal Entries */}
       <div className="entries">
         <h2>Your Entries</h2>
         {entries.length > 0 ? (
