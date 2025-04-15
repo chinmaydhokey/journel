@@ -8,8 +8,6 @@ function App() {
     content: "",
     date: "",
   });
-
-  // Load entries from local storage when the component mounts
   useEffect(() => {
     const storedEntries = localStorage.getItem("journalEntries");
     if (storedEntries) {
@@ -17,7 +15,6 @@ function App() {
     }
   }, []);
 
-  // Save entries to local storage whenever they change
   useEffect(() => {
     localStorage.setItem("journalEntries", JSON.stringify(entries));
   }, [entries]);
@@ -38,7 +35,7 @@ function App() {
     <div className="app">
       <h1>Personal Journal 📔</h1>
 
-      {/* Journal Entry Form */}
+    
       <div className="form">
         <input
           type="text"
